@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>二维码工具</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>二维码生成器</h1>
+      <input type="text" id="url" placeholder="请输入链接" />
+      <button id="generate">生成</button>
+      <div id="qrcode"></div>
+      <a id="download" download="qrcode.png">下载</a>
+    </div>
+    <script type="module" src="/src/main.js"></script> <!-- type="module"让浏览器把 main.js 当作 ES Module 处理，支持 import/export 语法，Vite 依赖此特性实现模块化 -->
+  </body>
+</html>
